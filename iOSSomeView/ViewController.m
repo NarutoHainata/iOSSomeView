@@ -5,11 +5,10 @@
 //  Created by yang on 16/7/25.
 //  Copyright © 2016年 poplary. All rights reserved.
 //
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define RGBA(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
 #import "ViewController.h"
-#import "UIAlertViewController.h"
+
+#import "Header.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *saveVCArr;
@@ -22,8 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UIAlertViewController *alertViewC = [[UIAlertViewController alloc]init];
-    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC, nil];
-    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController", nil];
+    CollectionViewController *collectionViewC = [[CollectionViewController alloc]init];
+    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC, nil];
+    
+    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController", nil];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;
