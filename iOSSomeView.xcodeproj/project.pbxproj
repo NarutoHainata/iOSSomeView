@@ -13,6 +13,7 @@
 		2F0222451D45DE06009270DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0222431D45DE06009270DB /* Main.storyboard */; };
 		2F0222471D45DE06009270DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0222461D45DE06009270DB /* Assets.xcassets */; };
 		2F02224A1D45DE06009270DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0222481D45DE06009270DB /* LaunchScreen.storyboard */; };
+		2F02225C1D4613FA009270DB /* UIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F02225B1D4613FA009270DB /* UIAlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2F0222461D45DE06009270DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0222491D45DE06009270DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F02224B1D45DE06009270DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F02225A1D4613FA009270DB /* UIAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewController.h; sourceTree = "<group>"; };
+		2F02225B1D4613FA009270DB /* UIAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				2F02223E1D45DE06009270DB /* AppDelegate.m */,
 				2F0222401D45DE06009270DB /* ViewController.h */,
 				2F0222411D45DE06009270DB /* ViewController.m */,
+				2F02225A1D4613FA009270DB /* UIAlertViewController.h */,
+				2F02225B1D4613FA009270DB /* UIAlertViewController.m */,
 				2F0222431D45DE06009270DB /* Main.storyboard */,
 				2F0222461D45DE06009270DB /* Assets.xcassets */,
 				2F0222481D45DE06009270DB /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				2F0222421D45DE06009270DB /* ViewController.m in Sources */,
 				2F02223F1D45DE06009270DB /* AppDelegate.m in Sources */,
 				2F02223C1D45DE06009270DB /* main.m in Sources */,
+				2F02225C1D4613FA009270DB /* UIAlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				2F0222501D45DE06009270DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

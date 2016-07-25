@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIAlertViewController.h
 //  iOSSomeView
 //
 //  Created by yang on 16/7/25.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UIAlertViewController : UIViewController
 
 @end
-
