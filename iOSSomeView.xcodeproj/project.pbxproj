@@ -15,6 +15,7 @@
 		2F02224A1D45DE06009270DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0222481D45DE06009270DB /* LaunchScreen.storyboard */; };
 		2F02225C1D4613FA009270DB /* UIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F02225B1D4613FA009270DB /* UIAlertViewController.m */; };
 		2FF8C48D1D463B2A00C719B8 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */; };
+		2FFDBA541D46F2AA00108AD9 /* MenuBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		2FF8C48B1D463B2A00C719B8 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		2FF8C48E1D46453100C719B8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		2FFDBA521D46F2AA00108AD9 /* MenuBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBtnViewController.h; sourceTree = "<group>"; };
+		2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBtnViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				2F02225B1D4613FA009270DB /* UIAlertViewController.m */,
 				2FF8C48B1D463B2A00C719B8 /* CollectionViewController.h */,
 				2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */,
+				2FFDBA521D46F2AA00108AD9 /* MenuBtnViewController.h */,
+				2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */,
 				2F0222431D45DE06009270DB /* Main.storyboard */,
 				2F0222461D45DE06009270DB /* Assets.xcassets */,
 				2F0222481D45DE06009270DB /* LaunchScreen.storyboard */,
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFDBA541D46F2AA00108AD9 /* MenuBtnViewController.m in Sources */,
 				2F0222421D45DE06009270DB /* ViewController.m in Sources */,
 				2F02223F1D45DE06009270DB /* AppDelegate.m in Sources */,
 				2F02223C1D45DE06009270DB /* main.m in Sources */,

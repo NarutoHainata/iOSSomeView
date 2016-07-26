@@ -63,7 +63,7 @@
                                             UICollectionElementKindSectionHeader withReuseIdentifier:@"Resusable" forIndexPath:indexPath];
     UIView *View = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
     View.backgroundColor = [UIColor blueColor];
-    [headerView addSubview:View];//头部广告栏
+    [headerView addSubview:View];
     return headerView;
 }
 
