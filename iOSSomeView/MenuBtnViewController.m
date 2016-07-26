@@ -8,8 +8,8 @@
 
 #import "MenuBtnViewController.h"
 #import "Header.h"
-@interface MenuBtnViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;
+@interface MenuBtnViewController ()<UIPopoverPresentationControllerDelegate>
+@property(nonatomic,strong)PopoverViewController *popoverVC;
 @end
 
 @implementation MenuBtnViewController
@@ -27,46 +27,51 @@
     UIBarButtonItem *rightBtnItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
     self.navigationItem.rightBarButtonItem = rightBtnItem;
     
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-100, 0, 100, 160) style:UITableViewStylePlain];
-    tableView.delegate = self;
-    tableView.dataSource  = self;
-    tableView.hidden = YES;
-    tableView.layer.cornerRadius = 10;
-    [self.view addSubview:tableView];
-    self.tableView = tableView;
-    
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(hideTableView)];
-    [self.view addGestureRecognizer:pan];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tableDidSelected:) name:@"click" object:nil];
     
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+//处理popover上的talbe的cell点击
+- (void)tableDidSelected:(NSNotification *)notification {
+    NSIndexPath *indexpath = (NSIndexPath *)notification.object;
+    switch (indexpath.row) {
+        case 0:
+            self.view.backgroundColor = [UIColor greenColor];
+            break;
+        case 1:
+            self.view.backgroundColor = [UIColor grayColor];
+            break;
+        case 2:
+            self.view.backgroundColor = [UIColor blueColor];
+            break;
+        case 3:
+            self.view.backgroundColor = [UIColor purpleColor];
+            break;
+        case 4:
+            self.view.backgroundColor = [UIColor yellowColor];
+            break;
+    }
 }
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellid"];
-    cell.textLabel.text = @"cell";
-    return  cell;
-}
+
 -(void)rightBtnClick{
     
-    if (self.tableView.hidden == YES) {
-        self.tableView.hidden  = NO;
-    }else{
-        self.tableView.hidden = YES;
-    }
     
-    
+    self.popoverVC = [[PopoverViewController alloc] init];
+    self.popoverVC.modalPresentationStyle = UIModalPresentationPopover;
+    self.popoverVC.popoverPresentationController.barButtonItem = self.navigationItem.rightBarButtonItem;  //rect参数是以view的左上角为坐标原点（0，0）
+    self.popoverVC.popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionUnknown; //箭头方向,如果是baritem不设置方向，会默认up，up的效果也是最理想的
+    self.popoverVC.popoverPresentationController.delegate = self;
+    [self presentViewController:self.popoverVC animated:YES completion:nil];
+
     
 }
--(void)hideTableView{
-    self.tableView.hidden  = YES;
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller{
+    return UIModalPresentationNone;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 30;
+
+- (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *)popoverPresentationController{
+    return YES;   //点击蒙版popover不消失， 默认yes
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

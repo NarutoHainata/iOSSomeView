@@ -16,6 +16,7 @@
 		2F02225C1D4613FA009270DB /* UIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F02225B1D4613FA009270DB /* UIAlertViewController.m */; };
 		2FF8C48D1D463B2A00C719B8 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */; };
 		2FFDBA541D46F2AA00108AD9 /* MenuBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */; };
+		2FFDBA5D1D471E5D00108AD9 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDBA5C1D471E5D00108AD9 /* PopoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		2FF8C48E1D46453100C719B8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		2FFDBA521D46F2AA00108AD9 /* MenuBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBtnViewController.h; sourceTree = "<group>"; };
 		2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBtnViewController.m; sourceTree = "<group>"; };
+		2FFDBA5B1D471E5D00108AD9 /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		2FFDBA5C1D471E5D00108AD9 /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */,
 				2FFDBA521D46F2AA00108AD9 /* MenuBtnViewController.h */,
 				2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */,
+				2FFDBA5B1D471E5D00108AD9 /* PopoverViewController.h */,
+				2FFDBA5C1D471E5D00108AD9 /* PopoverViewController.m */,
 				2F0222431D45DE06009270DB /* Main.storyboard */,
 				2F0222461D45DE06009270DB /* Assets.xcassets */,
 				2F0222481D45DE06009270DB /* LaunchScreen.storyboard */,
@@ -172,6 +177,7 @@
 				2F02223C1D45DE06009270DB /* main.m in Sources */,
 				2FF8C48D1D463B2A00C719B8 /* CollectionViewController.m in Sources */,
 				2F02225C1D4613FA009270DB /* UIAlertViewController.m in Sources */,
+				2FFDBA5D1D471E5D00108AD9 /* PopoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
