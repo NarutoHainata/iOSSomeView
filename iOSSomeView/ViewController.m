@@ -19,22 +19,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"主页";
     // Do any additional setup after loading the view, typically from a nib.
     UIAlertViewController *alertViewC = [[UIAlertViewController alloc]init];
     CollectionViewController *collectionViewC = [[CollectionViewController alloc]init];
     MenuBtnViewController *menuBtnViewC = [[MenuBtnViewController alloc]init];
+    TextFieldAndKeyboard *textFieldKeyboard = [[TextFieldAndKeyboard alloc]init];
     
-    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC, nil];
     
-    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController", nil];
+    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard, nil];
+    
+    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard", nil];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.backgroundColor = RGBA(245, 245, 245, 1);
+    tableView.backgroundView = [[UIView alloc]initWithFrame:tableView.frame];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:tableView.frame];
+    imageView.image = [UIImage imageNamed:@"mainbg.jpeg"];
+    [tableView.backgroundView addSubview:imageView];
     tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.01f)];
+    tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:tableView];
     self.tableView = tableView;
+    
     
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -47,6 +56,8 @@
 
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellid"];
     cell.textLabel.text = [self.saveCellTtile objectAtIndex:indexPath.row];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

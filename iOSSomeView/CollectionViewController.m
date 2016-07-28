@@ -8,7 +8,7 @@
 
 #import "CollectionViewController.h"
 #import "Header.h"
-@interface CollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface CollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 @property(nonatomic,strong)UICollectionView *collectionView;
 @end
 
@@ -31,7 +31,7 @@
     
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 9;
+    return 15;
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
@@ -61,9 +61,16 @@
 {
     UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:
                                             UICollectionElementKindSectionHeader withReuseIdentifier:@"Resusable" forIndexPath:indexPath];
-    UIView *View = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
-    View.backgroundColor = [UIColor blueColor];
-    [headerView addSubview:View];
+    UIScrollView *scrolllView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+    scrolllView.delegate = self;
+    scrolllView.contentSize = CGSizeMake(SCREEN_WIDTH*3, 150);
+    for (int i = 0 ; i<3; i++) {
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, 150)];
+        view.backgroundColor = RGBA(arc4random()%255, arc4random()%255, arc4random()%255, 1);
+        [scrolllView addSubview:view];
+    }
+    scrolllView.pagingEnabled = YES;
+    [headerView addSubview:scrolllView];
     return headerView;
 }
 
