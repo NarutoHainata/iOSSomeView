@@ -7,7 +7,7 @@
 //
 
 #import "CollectionViewController.h"
-#import "Header.h"
+
 @interface CollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 @property(nonatomic,strong)UICollectionView *collectionView;
 @end

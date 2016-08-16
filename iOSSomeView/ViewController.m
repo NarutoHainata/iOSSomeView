@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "RecommendViewController.h"
 
-#import "Header.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *saveVCArr;
@@ -20,16 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"主页";
+    //self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController.navigationBar setBarTintColor:RGBA(145, 250, 250, 0.5)];
+    //[self.navigationController.navigationBar.subviews objectAtIndex:<#(NSUInteger)#>];
+    //self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    self.edgesForExtendedLayout = UIRectEdgeTop;
     // Do any additional setup after loading the view, typically from a nib.
     UIAlertViewController *alertViewC = [[UIAlertViewController alloc]init];
     CollectionViewController *collectionViewC = [[CollectionViewController alloc]init];
     MenuBtnViewController *menuBtnViewC = [[MenuBtnViewController alloc]init];
     TextFieldAndKeyboard *textFieldKeyboard = [[TextFieldAndKeyboard alloc]init];
+    ScrollMenuBtnViewController *scrollMenuBtnVC = [[ScrollMenuBtnViewController alloc]init];
+    RecommendViewController *recomVC = [[RecommendViewController alloc]init];
     
+    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC, nil];
     
-    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard, nil];
-    
-    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard", nil];
+    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController", nil];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -55,6 +61,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellid"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = [self.saveCellTtile objectAtIndex:indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor whiteColor];
