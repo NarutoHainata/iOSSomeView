@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "RecommendViewController.h"
-
+#import "SizeToFitViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *saveVCArr;
@@ -32,10 +32,10 @@
     TextFieldAndKeyboard *textFieldKeyboard = [[TextFieldAndKeyboard alloc]init];
     ScrollMenuBtnViewController *scrollMenuBtnVC = [[ScrollMenuBtnViewController alloc]init];
     RecommendViewController *recomVC = [[RecommendViewController alloc]init];
+    SizeToFitViewController *sizeVC = [[SizeToFitViewController alloc]init];
+    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC,sizeVC, nil];
     
-    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC, nil];
-    
-    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController", nil];
+    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController",@"SizeToFitViewController", nil];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;
