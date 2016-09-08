@@ -124,7 +124,9 @@
     
 }
 -(void)dismissKeyboardClick{
+    
     [self.textField resignFirstResponder];
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return SCREEN_HEIGHT;

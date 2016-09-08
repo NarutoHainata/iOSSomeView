@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RecommendViewController.h"
 #import "SizeToFitViewController.h"
+#import "ProgressViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *saveVCArr;
@@ -33,9 +34,12 @@
     ScrollMenuBtnViewController *scrollMenuBtnVC = [[ScrollMenuBtnViewController alloc]init];
     RecommendViewController *recomVC = [[RecommendViewController alloc]init];
     SizeToFitViewController *sizeVC = [[SizeToFitViewController alloc]init];
-    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC,sizeVC, nil];
+    ProgressViewController *pVC = [[ProgressViewController alloc]init];
     
-    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController",@"SizeToFitViewController", nil];
+    
+    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC,sizeVC,pVC, nil];
+    
+    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController",@"SizeToFitViewController",@"ProgressViewController", nil];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;

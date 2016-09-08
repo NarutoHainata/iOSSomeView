@@ -19,6 +19,8 @@
 		2F9852C91D62EC8300D5A409 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9852C61D62EC8300D5A409 /* img1.jpg */; };
 		2F9852CA1D62EC8300D5A409 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9852C71D62EC8300D5A409 /* img2.jpg */; };
 		2F9852CB1D62EC8300D5A409 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9852C81D62EC8300D5A409 /* img3.jpg */; };
+		2FEE262F1D65AB3500EA4B87 /* SizeToFitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE262E1D65AB3500EA4B87 /* SizeToFitViewController.m */; };
+		2FEE26321D65AD3000EA4B87 /* SizeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE26311D65AD3000EA4B87 /* SizeTableViewCell.m */; };
 		2FF8C48D1D463B2A00C719B8 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */; };
 		2FFDBA541D46F2AA00108AD9 /* MenuBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDBA531D46F2AA00108AD9 /* MenuBtnViewController.m */; };
 		2FFDBA5D1D471E5D00108AD9 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDBA5C1D471E5D00108AD9 /* PopoverViewController.m */; };
@@ -28,6 +30,7 @@
 		2FFF54A31D49E208008C9249 /* bgimg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFF54A21D49E208008C9249 /* bgimg.jpg */; };
 		2FFF54A81D49E894008C9249 /* ScrollMenuBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF54A51D49E894008C9249 /* ScrollMenuBtnView.m */; };
 		2FFF54A91D49E894008C9249 /* ScrollMenuBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF54A71D49E894008C9249 /* ScrollMenuBtnViewController.m */; };
+		2FFF7C281D812F8000603D85 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF7C271D812F8000603D85 /* ProgressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,10 @@
 		2F9852C61D62EC8300D5A409 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		2F9852C71D62EC8300D5A409 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		2F9852C81D62EC8300D5A409 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		2FEE262D1D65AB3500EA4B87 /* SizeToFitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeToFitViewController.h; sourceTree = "<group>"; };
+		2FEE262E1D65AB3500EA4B87 /* SizeToFitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeToFitViewController.m; sourceTree = "<group>"; };
+		2FEE26301D65AD3000EA4B87 /* SizeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeTableViewCell.h; sourceTree = "<group>"; };
+		2FEE26311D65AD3000EA4B87 /* SizeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeTableViewCell.m; sourceTree = "<group>"; };
 		2FF8C48B1D463B2A00C719B8 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		2FF8C48C1D463B2A00C719B8 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		2FFDBA521D46F2AA00108AD9 /* MenuBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBtnViewController.h; sourceTree = "<group>"; };
@@ -66,6 +73,8 @@
 		2FFF54A51D49E894008C9249 /* ScrollMenuBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMenuBtnView.m; sourceTree = "<group>"; };
 		2FFF54A61D49E894008C9249 /* ScrollMenuBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollMenuBtnViewController.h; sourceTree = "<group>"; };
 		2FFF54A71D49E894008C9249 /* ScrollMenuBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMenuBtnViewController.m; sourceTree = "<group>"; };
+		2FFF7C261D812F8000603D85 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		2FFF7C271D812F8000603D85 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,12 @@
 				2F9852C01D62DCC100D5A409 /* RecommendViewController.m */,
 				2F9852C21D62DCF900D5A409 /* TableViewCell.h */,
 				2F9852C31D62DCF900D5A409 /* TableViewCell.m */,
+				2FEE262D1D65AB3500EA4B87 /* SizeToFitViewController.h */,
+				2FEE262E1D65AB3500EA4B87 /* SizeToFitViewController.m */,
+				2FEE26301D65AD3000EA4B87 /* SizeTableViewCell.h */,
+				2FEE26311D65AD3000EA4B87 /* SizeTableViewCell.m */,
+				2FFF7C261D812F8000603D85 /* ProgressViewController.h */,
+				2FFF7C271D812F8000603D85 /* ProgressViewController.m */,
 				2F0222431D45DE06009270DB /* Main.storyboard */,
 				2F0222461D45DE06009270DB /* Assets.xcassets */,
 				2F0222481D45DE06009270DB /* LaunchScreen.storyboard */,
@@ -236,7 +251,10 @@
 				2F02223C1D45DE06009270DB /* main.m in Sources */,
 				2FF8C48D1D463B2A00C719B8 /* CollectionViewController.m in Sources */,
 				2F02225C1D4613FA009270DB /* UIAlertViewController.m in Sources */,
+				2FEE262F1D65AB3500EA4B87 /* SizeToFitViewController.m in Sources */,
 				2FFF549C1D49DA41008C9249 /* TextFieldAndKeyboard.m in Sources */,
+				2FFF7C281D812F8000603D85 /* ProgressViewController.m in Sources */,
+				2FEE26321D65AD3000EA4B87 /* SizeTableViewCell.m in Sources */,
 				2FFF54A81D49E894008C9249 /* ScrollMenuBtnView.m in Sources */,
 				2F9852C11D62DCC100D5A409 /* RecommendViewController.m in Sources */,
 				2FFDBA5D1D471E5D00108AD9 /* PopoverViewController.m in Sources */,
