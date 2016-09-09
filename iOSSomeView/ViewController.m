@@ -10,6 +10,7 @@
 #import "RecommendViewController.h"
 #import "SizeToFitViewController.h"
 #import "ProgressViewController.h"
+#import "ImageCutViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *saveVCArr;
@@ -36,10 +37,10 @@
     SizeToFitViewController *sizeVC = [[SizeToFitViewController alloc]init];
     ProgressViewController *pVC = [[ProgressViewController alloc]init];
     
+    ImageCutViewController *iVC = [[ImageCutViewController alloc]init];
+    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC,sizeVC,pVC,iVC, nil];
     
-    self.saveVCArr = [[NSMutableArray alloc]initWithObjects:alertViewC,collectionViewC,menuBtnViewC,textFieldKeyboard,scrollMenuBtnVC,recomVC,sizeVC,pVC, nil];
-    
-    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController",@"SizeToFitViewController",@"ProgressViewController", nil];
+    self.saveCellTtile = [[NSMutableArray alloc]initWithObjects:@"UIAlertController",@"CollectionViewController",@"MenuBtnViewController",@"TextFieldAndKeyboard",@"ScrollMenuBtnViewController",@"RecommendViewController",@"SizeToFitViewController",@"ProgressViewController",@"ImageCutViewController", nil];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;

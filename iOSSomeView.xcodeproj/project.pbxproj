@@ -31,6 +31,7 @@
 		2FFF54A81D49E894008C9249 /* ScrollMenuBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF54A51D49E894008C9249 /* ScrollMenuBtnView.m */; };
 		2FFF54A91D49E894008C9249 /* ScrollMenuBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF54A71D49E894008C9249 /* ScrollMenuBtnViewController.m */; };
 		2FFF7C281D812F8000603D85 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF7C271D812F8000603D85 /* ProgressViewController.m */; };
+		2FFF7C2B1D8169B100603D85 /* ImageCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF7C2A1D8169B100603D85 /* ImageCutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		2FFF54A71D49E894008C9249 /* ScrollMenuBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMenuBtnViewController.m; sourceTree = "<group>"; };
 		2FFF7C261D812F8000603D85 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		2FFF7C271D812F8000603D85 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		2FFF7C291D8169B100603D85 /* ImageCutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCutViewController.h; sourceTree = "<group>"; };
+		2FFF7C2A1D8169B100603D85 /* ImageCutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				2FEE26311D65AD3000EA4B87 /* SizeTableViewCell.m */,
 				2FFF7C261D812F8000603D85 /* ProgressViewController.h */,
 				2FFF7C271D812F8000603D85 /* ProgressViewController.m */,
+				2FFF7C291D8169B100603D85 /* ImageCutViewController.h */,
+				2FFF7C2A1D8169B100603D85 /* ImageCutViewController.m */,
 				2F0222431D45DE06009270DB /* Main.storyboard */,
 				2F0222461D45DE06009270DB /* Assets.xcassets */,
 				2F0222481D45DE06009270DB /* LaunchScreen.storyboard */,
@@ -244,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFDBA541D46F2AA00108AD9 /* MenuBtnViewController.m in Sources */,
+				2FFF7C2B1D8169B100603D85 /* ImageCutViewController.m in Sources */,
 				2F9852C41D62DCF900D5A409 /* TableViewCell.m in Sources */,
 				2F0222421D45DE06009270DB /* ViewController.m in Sources */,
 				2F02223F1D45DE06009270DB /* AppDelegate.m in Sources */,
